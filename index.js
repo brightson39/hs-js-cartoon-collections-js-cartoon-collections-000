@@ -28,10 +28,10 @@ function findTheCheese (foods) {
   let cheese = ["cheddar", "gouda", "camembert"];
   for (var i = 0; i < cheese.length; i++ ){
     let firstcheese = cheese[i];
-    for(let a = 0; a < foods.length; a++){
-      let firstfoods = foods[a];
+    for(let i = 0; i < foods.length; i++){
+      let firstfoods = foods[i];
       if (firstcheese===firstfoods)
-      return foods[a]
+      return foods[i]
     }
   }
   return "no cheese!"
