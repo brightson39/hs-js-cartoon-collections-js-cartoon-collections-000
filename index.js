@@ -1,19 +1,19 @@
 function dwarfRollCall(dwarves) {
-  let newStr = [];
+  let rollCall = [];
   for (let i = 0; i < dwarves.length; i++){
-    newStr.push(((i+1) +". " + dwarves[i] +" "));
+    rollCall.push(((i+1) +". " + dwarves[i] +" "));
   }
-  return newStr.join("");
+  return rollCall.join("");
 }
 
 function summonCaptainPlanet(planeteerCalls){
-  let string =[];
+  let call =[];
   for(let i=0; i < planeteerCalls.length; i++){
     let firstElement= planeteerCalls[i];
     firstElement= firstElement.toUpperCase()+"!";
-    string.push(firstElement);
+    call.push(firstElement);
   }
-  return string;
+  return call;
 }
 
 function longPlaneteerCalls(characters) {
